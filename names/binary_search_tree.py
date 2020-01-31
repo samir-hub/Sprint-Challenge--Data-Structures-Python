@@ -7,8 +7,6 @@ class BinarySearchTree:
 
     # Insert the given value into the tree
     def insert(self, value):
-        if value == self.value:
-            print(value, self.value)
         if value < self.value: 
             if not self.left: 
                 self.left = BinarySearchTree(value)
@@ -41,7 +39,7 @@ class BinarySearchTree:
     # False if it does not
     def contains(self, target):
         if target == self.value:
-            return True
+            print(target)
         elif target < self.value:
             if self.left:
                 return self.left.contains(target)

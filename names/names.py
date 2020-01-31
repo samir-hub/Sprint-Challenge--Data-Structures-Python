@@ -18,7 +18,7 @@ for item in names_1:
     my_bst1.insert(item)
 
 for item in names_2:
-    my_bst1.insert(item)
+    my_bst1.contains(item)
 
 end_time = time.time()
 
